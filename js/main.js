@@ -25,7 +25,7 @@ $(document).ready(function () {
 
           if(singleBox.hasClass("green")){
             singleBox.removeClass("green");
-            singleBox.addClass("yellow")
+            singleBox.addClass("yellow" )
           } else{
             singleBox.addClass("yellow")
           }
