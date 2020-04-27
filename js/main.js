@@ -10,6 +10,8 @@ $(document).ready(function () {
     //console.log("click");
     var singleBox = $(this);
 
+    singleBox.removeClass("yellow green");
+
     //chiamata ajax api numero random
     $.ajax({
       url: randomApi,
@@ -23,18 +25,18 @@ $(document).ready(function () {
     
           if(singleBox.hasClass("green")){
             singleBox.removeClass("green");
-            singleBox.addClass("yellow" )
+            singleBox.addClass("yellow" );
           } else{
-            singleBox.addClass("yellow")
+            singleBox.addClass("yellow");
           }
 
         } else if(number > 5){
 
           if(singleBox.hasClass("yellow")){
             singleBox.removeClass("yellow");
-            singleBox.addClass("green")
+            singleBox.addClass("green");
           }else{
-            singleBox.addClass("green")
+            singleBox.addClass("green");
           }
         }
       },
