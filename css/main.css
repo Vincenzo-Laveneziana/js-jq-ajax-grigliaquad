@@ -22,7 +22,6 @@ body{
   animation: rotate 4s;
 }
 
-
 .box{
   animation: rotate 4s;
   width: 90px;
@@ -56,16 +55,16 @@ body{
 @keyframes change-yellow{
   0% {
     background-color: rgb(252, 252, 252);
-  }
+    }
   25% {
     background-color: rgb(255, 0, 0);
-  }
+    }
   50% {
     background-color: rgb(0, 128, 255);
-  }
+    }
   75% {
     background-color: rgb(0, 255, 255);
-  }
+    }
 }
 
 .green{
@@ -77,14 +76,14 @@ body{
 @keyframes change-green{
   0% {
     background-color: rgb(252, 252, 252);
-  }
+   }
   25% {
     background-color: rgb(255, 0, 0);
-  }
+   }
   50% {
     background-color: rgb(0, 128, 255);
-  }
+    }
   75% {
     background-color: rgb(0, 255, 255);
-  }
+    }
 }

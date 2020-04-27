@@ -7,7 +7,6 @@ $(document).ready(function () {
 
   //al click sul box
   box.click(function() {
-    
     //console.log("click");
     var singleBox = $(this);
 
@@ -16,20 +15,18 @@ $(document).ready(function () {
       url: randomApi,
       method: "GET",
       success: function (data) {
-        
+      
         var number = data.response;
-
         singleBox.text(number); 
 
         if(number <= 5){
-
+    
           if(singleBox.hasClass("green")){
             singleBox.removeClass("green");
             singleBox.addClass("yellow" )
           } else{
             singleBox.addClass("yellow")
           }
-          
 
         } else if(number > 5){
 
@@ -39,10 +36,9 @@ $(document).ready(function () {
           }else{
             singleBox.addClass("green")
           }
-          
         }
-        
       },
+      
       error: function (){
         console.log("Errore chiamata API");
       }
